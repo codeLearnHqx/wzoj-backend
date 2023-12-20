@@ -36,6 +36,11 @@ public class QuestionVO implements Serializable {
     private List<String> tags;
 
     /**
+     * 答案
+     */
+    private String answer;
+
+    /**
      * 题目提交数
      */
     private Integer submitNum;
@@ -46,10 +51,13 @@ public class QuestionVO implements Serializable {
     private Integer acceptNum;
 
     /**
-     *  判题配置（json 对象）
+     * 判题配置（json 对象）
      */
     private JudgeConfig judgeConfig;
-
+    /**
+     * 判题用例（json 数组）
+     */
+    private String judgeCase;
     /**
      * 点赞数
      */
@@ -82,6 +90,7 @@ public class QuestionVO implements Serializable {
 
     /**
      * 包装类转对象
+     *
      * @param questionVO
      * @return
      */
@@ -106,6 +115,7 @@ public class QuestionVO implements Serializable {
 
     /**
      * 对象转包装类
+     *
      * @param question
      * @return
      */
